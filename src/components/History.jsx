@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/History.css"; // Import external CSS file
+import "../styles/History.css"; 
 
 const History = () => {
   const [activeStep, setActiveStep] = useState(1);
@@ -39,31 +39,31 @@ const History = () => {
             className={`step step01 ${activeStep === 1 ? "active" : ""}`}
             onClick={() => handleStepClick(1)}
           >
-            <div className="step-inner">HOME WORK</div>
+            <div className="step-inner">Coustamizable</div>
           </li>
           <li
             className={`step step02 ${activeStep === 2 ? "active" : ""}`}
             onClick={() => handleStepClick(2)}
           >
-            <div className="step-inner">RESPONSIVE PART</div>
+            <div className="step-inner">Enthusiastic</div>
           </li>
           <li
             className={`step step03 ${activeStep === 3 ? "active" : ""}`}
             onClick={() => handleStepClick(3)}
           >
-            <div className="step-inner">Creative cREATIONS</div>
+            <div className="step-inner">Creative</div>
           </li>
           <li
             className={`step step04 ${activeStep === 4 ? "active" : ""}`}
             onClick={() => handleStepClick(4)}
           >
-            <div className="step-inner">TESTIMONIALS PART</div>
+            <div className="step-inner">Affeactive</div>
           </li>
           <li
             className={`step step05 ${activeStep === 5 ? "active" : ""}`}
             onClick={() => handleStepClick(5)}
           >
-            <div className="step-inner">OUR LOCATIONS</div>
+            <div className="step-inner">Responive</div>
           </li>
         </ul>
 

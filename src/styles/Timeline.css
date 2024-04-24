@@ -15,14 +15,22 @@
   }
 
   
-  /*Timeline*/
   .timeline {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum and maximum width as needed */
     grid-gap: 2rem;
     margin-left: 5%;
     padding-bottom: 3rem;
   }
+  
+  @media screen and (max-width: 768px) {
+    .timeline {
+      grid-template-columns: 1fr; /* Display one column for smaller screens */
+      padding-left: 5%; /* Adjust left padding for better alignment */
+      padding-right: 5%; /* Adjust right padding for better alignment */
+    }
+  }
+  
   .timeline .timeline-item {
     position: relative;
     padding-left: 3rem;

@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <HeroSection />
       <WhatWeDo />
-      <History />
+      {/* <History /> */}
       <Reviews />
       <LatestWork />
       <Timeline/>

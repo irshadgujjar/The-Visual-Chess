@@ -1,15 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/MeetOurTeam.css"; // Your custom styles
 
 export default function CardSlider() {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  useEffect(() => {
+    function handleResize() {
+      // Adjust the number of slides to show based on screen width
+      if (window.innerWidth >= 1024) {
+        setSlidesToShow(4);
+      } else if (window.innerWidth >= 768) {
+        setSlidesToShow(3);
+      } else if (window.innerWidth >= 480) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(1);
+      }
+    }
+
+    // Add event listener to handle window resize
+    window.addEventListener("resize", handleResize);
+
+    // Call handleResize to set initial number of slides to show
+    handleResize();
+
+    // Remove event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Number of cards to show at a time
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -26,7 +52,7 @@ export default function CardSlider() {
         style={{
           ...style,
           display: "block",
-          background: "white",
+          background: "#bebae0",
           borderRadius: "50%",
           padding: "10px",
         }}
@@ -43,8 +69,8 @@ export default function CardSlider() {
         style={{
           ...style,
           display: "block",
-          background: "white",
-          borderRadius: "50%",
+          background: "#bebae0",
+          borderRadius: "60%",
           padding: "10px",
         }}
         onClick={onClick}

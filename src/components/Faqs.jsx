@@ -10,7 +10,7 @@ const Accordion = () => {
           style={{
             color: "#BEBAE0",
             background: "#160A33",
-            boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
+            // boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
             border: "1px solid rgba(255, 255, 255, 0.1)",
           }}
         >
