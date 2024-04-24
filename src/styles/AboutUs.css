@@ -1,0 +1,24 @@
+
+.card {
+  max-width: 500px;
+  width: 100%; 
+}
+
+.timeline-item {
+  margin-bottom: 20px; 
+}
+
+/* Ensure that the card titles stay on a single line */
+.card-title {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+}
+
+.fw-bold{
+  color: white;
+}
+.detail{
+  color: white;
+}
+

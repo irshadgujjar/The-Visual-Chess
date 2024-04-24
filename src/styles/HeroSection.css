@@ -1,0 +1,47 @@
+/* HeroSection.css */
+
+.hero-image {
+  width: 150% !important;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth zoom effect */
+}
+
+.hero-image:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.icon-box {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .icon-box:hover {
+    border-color: #BEBAE0;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #BEBAE0;
+  }
+  
+  .icon-box:hover .icon {
+    color: #333;
+  }
+
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10%);
+    }
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce-slow 5s infinite;
+  }
+  
+  

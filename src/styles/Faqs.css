@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: #160a33;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1.5rem 2.5rem 1.5rem 1.5rem; /* Adjusted padding */
+  border: none;
+  outline: none;
+  transition: background-color 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-top-left-radius: 10px; /* Bevel effect */
+  border-bottom-left-radius: 10px; /* Bevel effect */
+}
+
+
+.panel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: #BEBAE0;
+  color: #160a33;
+  overflow: hidden;
+  display: none;
+  border-radius: 2%;
+}
+
+.show {
+  display: block;
+}
+
+.panel p {
+  color: #160a33;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+
+/* Dropdown arrow */
+.accordion i {
+  margin-left: auto;
+  margin-right: 1rem;
+  color: #7059a6;
+}
