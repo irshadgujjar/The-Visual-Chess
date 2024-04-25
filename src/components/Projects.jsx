@@ -188,7 +188,7 @@ const PortfolioCard = ({
             </h3>
             <a
               href={buttonHref}
-              className="text-[#160a33] dark:text-dark-6 hover:border-[white] hover:bg-[#160a33] inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+              className="text-[white] bg-[#160a33] dark:text-dark-6 hover:border-[white] hover:bg-[#160a33] inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
             >
               {button}
             </a>
