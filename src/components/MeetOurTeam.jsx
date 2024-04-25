@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/MeetOurTeam.css"; // Your custom styles
 
 export default function CardSlider() {
-  const [slidesToShow, setSlidesToShow] = useState(4);
+  const [slidesToShow, setSlidesToShow] = useState();
 
   useEffect(() => {
     function handleResize() {
@@ -105,6 +105,7 @@ export default function CardSlider() {
 
       <Slider {...settings}>
         <div className="slider-item">
+
           <div className="cardContainer">
             <div className="card">
               <p className="city">PINK CITY</p>
@@ -223,7 +224,6 @@ export default function CardSlider() {
             </div>
           </div>
         </div>
-        {/* Add more slider items here if needed */}
       </Slider>
     </div>
   );

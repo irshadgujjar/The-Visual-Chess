@@ -13,10 +13,6 @@
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   }
-
-  /* Timeline.css */
-/* Timeline.css */
-
 /* Ensure the container stretches to fit its parent */
 .container {
   width: 100%;
@@ -43,8 +39,9 @@
 
 /* Make each timeline item responsive */
 .timeline {
-  display: flex; /* Changed to flex */
-  flex-direction: column; /* Changed to column */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: 5%;
   padding-bottom: 3rem;
 }
@@ -52,7 +49,7 @@
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  margin-bottom: 2rem; /* Added margin between timeline items */
+  margin-bottom: 2rem;
 }
 
 .timeline .timeline-item .tl-icon {
@@ -102,4 +99,11 @@
 .port-text {
   padding: 2rem 0;
   text-align: center;
+}
+
+/* Make timeline items full-width on smaller screens */
+@media screen and (max-width: 768px) {
+  .timeline .timeline-item {
+    width: 100%;
+  }
 }

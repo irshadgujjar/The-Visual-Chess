@@ -12,8 +12,8 @@
 
 .card {
   position: relative;
-  width: 220px;
-  height: 300px;
+  width: 240px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,7 +142,7 @@
   font-size: 20px;
   line-height: 1;
   opacity: 0.75;
-  color: black;
+  color: #160a33;
 }
 
 .slick-prev:before {
