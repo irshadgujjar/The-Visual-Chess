@@ -75,13 +75,13 @@ export default function HeroSection() {
               <a href="#" className="icon-box" title="Contact">
                 <FaPhone className="icon" style={{ color: "#BEBAE0" }} />
               </a>
-              <a
+              {/* <a
                 className="icon"
                 title="ContactNo"
                 style={{ color: "#BEBAE0" }}
               >
                 +1231234234
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
