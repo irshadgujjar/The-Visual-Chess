@@ -69,7 +69,7 @@ export default function WhatWeDo() {
   }, []);
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 border-t border-b border-gray-500 mt-4 mb-4">
+    <div className="mx-auto  overflow-hidden max-w-7xl px-4 sm:px-6 lg:px-8 border-t border-b border-gray-500 mt-4 mb-4">
       <div className="mx-auto max-w-xl text-center">
         <h2
           className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"

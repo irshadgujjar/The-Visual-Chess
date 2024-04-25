@@ -11,7 +11,7 @@ import {
 
 export default function HeroSection() {
   return (
-    <div className="mx-auto mt-8 sm:px-6 lg:px-8">
+    <div className="mx-auto mt-8 sm:px-6 lg:px-8 overflow-hidden">
       <div
         className="relative isolate overflow-hidden shadow-2xl sm:rounded-3xl sm:px-16 lg:flex lg:gap-x-20 lg:px-24 border border-gray-600 w-full"
         style={{ background: "#0a0417" }}

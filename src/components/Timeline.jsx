@@ -4,7 +4,7 @@ import { FaBriefcase } from "react-icons/fa";
 export default function Team() {
   return (
     
-    <section className="container about" id="about">
+    <section className="container about overflow-hidden" id="about">
       <div className="mx-auto max-w-xl text-center">
         <h2
           className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"

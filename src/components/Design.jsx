@@ -3,10 +3,10 @@ import React from 'react'
 export default function Design() {
   return (
    
-<div className="relative max-w-screen-xl p-4 px-4 mx-auto sm:px-6 lg:px-8 py-26 lg:mt-20">
+<div className="relative max-w-screen-xl p-4 px-4 mx-auto sm:px-6 lg:px-8 py-26 lg:mt-10">
 <div className="mx-auto max-w-xl text-center mb-20">
           <h2
-            className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
+            className="mt-1 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
             style={{
               color: "#BEBAE0",
               background: "#160A33",

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/LatestWork.css";
 export default function LatestWork() {
   return (
-    <section class="container border-b border-gray-500 mt-4 mb-8" id="blogs">
+    <section class="container  overflow-hidden border-b border-gray-500 mt-4 mb-8" id="blogs">
     <div class="blogs-content ml-5 mr-7">
     <div className="mx-auto max-w-xl text-center">
         <h2
