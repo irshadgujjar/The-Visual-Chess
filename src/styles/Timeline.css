@@ -96,14 +96,20 @@
   color: var(--color-grey-2);
 }
 
-.port-text {
-  padding: 2rem 0;
-  text-align: center;
-}
-
 /* Make timeline items full-width on smaller screens */
 @media screen and (max-width: 768px) {
   .timeline .timeline-item {
     width: 100%;
+    padding-left: 0; /* Reset padding */
+    margin-bottom: 2rem; /* Add margin to separate items */
+  }
+
+  .timeline .timeline-item .tl-icon {
+    position: static;
+    margin-bottom: 1rem; /* Add some space between icon and text */
+  }
+
+  .timeline .timeline-item .tl-duration {
+    margin-left: 0; /* Reset margin */
   }
 }

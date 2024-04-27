@@ -10,13 +10,11 @@ import Team from "../components/Team.jsx";
 import Timeline from "../components/Timeline.jsx";
 import Testimonials from'./Testimonials.jsx';
 import Faqs from "../components/Faqs.jsx";
-import Head from "../components/Head.jsx";
 import Contact from "../components/Contact.jsx";
 import Blogs from "../components/Blogs.jsx";
 export default function Home() {
   return (
     <>
-    {/* <Head /> */}
       <HeroSection />
       <WhatWeDo />
       {/* <History /> */}

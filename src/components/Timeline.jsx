@@ -3,8 +3,10 @@ import "../styles/Timeline.css";
 import { FaBriefcase } from "react-icons/fa";
 export default function Team() {
   return (
-    
-    <section className="container about overflow-hidden" id="about">
+    <section
+      className="container about overflow-hidden display flex-center"
+      id="about"
+    >
       <div className="mx-auto max-w-xl text-center">
         <h2
           className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
@@ -29,82 +31,64 @@ export default function Team() {
       </div>
       <div class="timeline">
         <div class="timeline-item">
-        <div className="tl-icon " style={{color:"#160a33"}}>
-        <FaBriefcase />
-      </div>
+          <div className="tl-icon " style={{ color: "#160a33" }}>
+            <FaBriefcase />
+          </div>
           <p class="tl-duration">2010 - present</p>
-          <h5 className="text" style={{color:"#bebae0"}}>
+          <h5 className="text" style={{ color: "#bebae0" }}>
             Web Developer
           </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            vero fugit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="timeline-item">
-        <div className="tl-icon " style={{color:"#160a33"}}>
-        <FaBriefcase />
-      </div>
+          <div className="tl-icon " style={{ color: "#160a33" }}>
+            <FaBriefcase />
+          </div>
           <p class="tl-duration">2008 - 2011</p>
-        <h5 className="text" style={{color:"#bebae0"}}>
+          <h5 className="text" style={{ color: "#bebae0" }}>
             Software Engineer
           </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            vero fugit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="timeline-item">
-        <div className="tl-icon " style={{color:"#160a33"}}>
-        <FaBriefcase />
-      </div>
+          <div className="tl-icon " style={{ color: "#160a33" }}>
+            <FaBriefcase />
+          </div>
           <p class="tl-duration">2016 - 2017</p>
-        <h5 className="text" style={{color:"#bebae0"}}>
+          <h5 className="text" style={{ color: "#bebae0" }}>
             C++ Programmer
           </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            vero fugit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="timeline-item">
-        <div className="tl-icon " style={{color:"#160a33"}}>
-        <FaBriefcase />
-      </div>
+          <div className="tl-icon " style={{ color: "#160a33" }}>
+            <FaBriefcase />
+          </div>
           <p class="tl-duration">2009 - 2013</p>
-        <h5 className="text" style={{color:"#bebae0"}}>
+          <h5 className="text" style={{ color: "#bebae0" }}>
             Business Degree
           </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            vero fugit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="timeline-item">
-        <div className="tl-icon " style={{color:"#160a33"}}>
-        <FaBriefcase />
-      </div>
+          <div className="tl-icon " style={{ color: "#160a33" }}>
+            <FaBriefcase />
+          </div>
           <p class="tl-duration">2013 - 2016</p>
-        <h5 className="text" style={{color:"#bebae0"}}>
+          <h5 className="text" style={{ color: "#bebae0" }}>
             Computer Science Degree
           </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            vero fugit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="timeline-item">
-        <div className="tl-icon " style={{color:"#160a33"}}>
-        <FaBriefcase />
-      </div>
+          <div className="tl-icon " style={{ color: "#160a33" }}>
+            <FaBriefcase />
+          </div>
           <p class="tl-duration">2017 - present</p>
-        <h5 className="text" style={{color:"#bebae0"}}>
+          <h5 className="text" style={{ color: "#bebae0" }}>
             3d Animation
           </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi
-            vero fugit.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </section>
