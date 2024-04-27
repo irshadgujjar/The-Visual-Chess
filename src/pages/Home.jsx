@@ -6,20 +6,26 @@ import Reviews from "../components/Reviews.jsx";
 import NewsLetter from "../components/NewsLetter.jsx";
 import LatestWork from "../components/LatestWork.jsx";
 import MeetOurTeam from "../components/MeetOurTeam.jsx";
+import Team from "../components/Team.jsx";
 import Timeline from "../components/Timeline.jsx";
 import Testimonials from'./Testimonials.jsx';
 import Faqs from "../components/Faqs.jsx";
+import Head from "../components/Head.jsx";
 import Contact from "../components/Contact.jsx";
+import Blogs from "../components/Blogs.jsx";
 export default function Home() {
   return (
     <>
+    {/* <Head /> */}
       <HeroSection />
       <WhatWeDo />
       {/* <History /> */}
       <Reviews />
       <LatestWork />
+      {/* <Blogs /> */}
       <Timeline/>
       <MeetOurTeam />
+      {/* <Team /> */}
       <NewsLetter />
       <Testimonials/>
       <Faqs />

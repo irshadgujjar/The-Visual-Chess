@@ -1,23 +1,43 @@
 import React from "react";
-
+import { FaPhoneAlt } from 'react-icons/fa';
 const Contact = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden ml-8  py-20 dark:bg-dark lg:py-[120px]">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap lg:justify-between">
-            <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
-               
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]"
-                style={{color:"#BEBAE0"}}>
-                  GET IN TOUCH WITH US
-                </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color text-white" >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
-                </p>
+     <section className="relative z-10 overflow-hidden ml-8 py-10 dark:bg-dark lg:py-[120px]">
+  <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="max-w-screen-sm sm:text-center sm:mx-auto">
+      <a
+        href="/"
+        aria-label="View"
+        className="inline-block mb-5 rounded-full sm:mx-auto"
+      >
+        <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#160a33]">
+          <FaPhoneAlt className="w-12 h-12 text-[#bebae0] animate-zoom" />
+        </div>
+      </a>
+      <h2 className="mb-4 font-sans text-3xl font-bold tracking-tight text-[#bebae0] sm:text-4xl sm:leading-none">
+        Chase ball of string eat
+      </h2>
+      <p className="text-base text-white md:text-lg sm:px-4">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+      </p>
+      <hr className="w-full my-8 border-[#bebae0]" />
+    </div>
+  </div>
+  <div className="container">
+    <div className="-mx-4 flex flex-wrap lg:justify-between">
+      <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
+        <div className="mb-12 max-w-[570px] lg:mb-0">
+          <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]" style={{color:"#BEBAE0"}}>
+            GET IN TOUCH WITH US
+          </h2>
+          <p className="mb-9 text-base leading-relaxed text-body-color text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eius tempor incididunt ut labore e dolore magna aliqua. Ut
+            enim adiqua minim veniam quis nostrud exercitation ullamco
+          </p>
+        
+
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                     <svg

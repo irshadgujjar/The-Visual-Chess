@@ -3,10 +3,10 @@ import "../styles/LatestWork.css";
 export default function LatestWork() {
   return (
     <section
-      class="container  overflow-hidden border-b border-gray-500 mt-4 mb-8"
+      class="container  overflow-hidden border-b border-gray-500 mt-4 mb-12 flex justify-center  "
       id="blogs"
     >
-      <div class="blogs-content ml-5 mr-7">
+      <div class="blogs-content align-center ">
         <div className="mx-auto max-w-xl text-center">
           <h2
             className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
