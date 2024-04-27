@@ -1,0 +1,43 @@
+.p-6 {
+  padding: 1.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+textarea {
+  transition: border-color 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: #bebae0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #160a33;
+}
+
+/* Submit Button */
+button[type="button"] {
+  transition: background-color 0.3s ease;
+  background-color: #160a33;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+button[type="button"]:hover {
+  background-color: #2d1f5f;
+}
