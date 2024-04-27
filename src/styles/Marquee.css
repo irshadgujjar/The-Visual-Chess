@@ -1,0 +1,27 @@
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #bebae0; /* Light text color */
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #bebae0; /* Light text color */
+    font-size: 1.5rem; /* Adjust size as needed */
+  }
+  

@@ -11,7 +11,7 @@ export default function CardSlider() {
     function handleResize() {
       // Adjust the number of slides to show based on screen width
       if (window.innerWidth >= 1024) {
-        setSlidesToShow(4);
+        setSlidesToShow(5);
       } else if (window.innerWidth >= 768) {
         setSlidesToShow(3);
       } else if (window.innerWidth >= 480) {
@@ -39,7 +39,7 @@ export default function CardSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    arrows: true, 
+    arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
@@ -63,7 +63,7 @@ export default function CardSlider() {
       />
     );
   }
-  
+
   function CustomNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -75,7 +75,7 @@ export default function CardSlider() {
           background: "#bebae0",
           borderRadius: "50%",
           padding: "10px",
-          zIndex: "1", 
+          zIndex: "1",
           right: "0",
           transform: "translate(-5%, -50%)", // Center arrow vertically and horizontally
         }}
@@ -111,11 +111,10 @@ export default function CardSlider() {
 
       <Slider {...settings}>
         <div className="slider-item">
-
           <div className="cardContainer">
             <div className="card">
               <p className="city">PINK CITY</p>
-             
+
               <svg
                 className="weather"
                 viewBox="0 0 100 100"
@@ -147,11 +146,10 @@ export default function CardSlider() {
         </div>
 
         <div className="slider-item">
-
           <div className="cardContainer">
             <div className="card">
               <p className="city">PINK CITY</p>
-             
+
               <svg
                 className="weather"
                 viewBox="0 0 100 100"
@@ -183,77 +181,73 @@ export default function CardSlider() {
         </div>
 
         <div className="slider-item">
+          <div className="cardContainer">
+            <div className="card">
+              <p className="city">PINK CITY</p>
 
-<div className="cardContainer">
-  <div className="card">
-    <p className="city">PINK CITY</p>
-   
-    <svg
-      className="weather"
-      viewBox="0 0 100 100"
-      width="100%" // Make the image fill its container
-      height="100%" // Make the image fill its container
-    >
-      <image
-        id="image0"
-        width="100"
-        height="100"
-        x="0"
-        y="0"
-        href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
-      ></image>
-    </svg>
-    <p className="temp">32°</p>
-    <div className="minmaxContainer">
-      <div className="min">
-        <p className="minHeading">Min</p>
-        <p className="minTemp">30°</p>
-      </div>
-      <div className="max">
-        <p className="maxHeading">Max</p>
-        <p className="maxTemp">32°</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div className="slider-item">
+              <svg
+                className="weather"
+                viewBox="0 0 100 100"
+                width="100%"
+                height="100%"
+              >
+                <image
+                  id="image0"
+                  width="100"
+                  height="100"
+                  x="0"
+                  y="0"
+                  href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                ></image>
+              </svg>
+              <p className="temp">32°</p>
+              <div className="minmaxContainer">
+                <div className="min">
+                  <p className="minHeading">Min</p>
+                  <p className="minTemp">30°</p>
+                </div>
+                <div className="max">
+                  <p className="maxHeading">Max</p>
+                  <p className="maxTemp">32°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slider-item">
+          <div className="cardContainer">
+            <div className="card">
+              <p className="city">PINK CITY</p>
 
-<div className="cardContainer">
-  <div className="card">
-    <p className="city">PINK CITY</p>
-   
-    <svg
-      className="weather"
-      viewBox="0 0 100 100"
-      width="100%" // Make the image fill its container
-      height="100%" // Make the image fill its container
-    >
-      <image
-        id="image0"
-        width="100"
-        height="100"
-        x="0"
-        y="0"
-        href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
-      ></image>
-    </svg>
-    <p className="temp">32°</p>
-    <div className="minmaxContainer">
-      <div className="min">
-        <p className="minHeading">Min</p>
-        <p className="minTemp">30°</p>
-      </div>
-      <div className="max">
-        <p className="maxHeading">Max</p>
-        <p className="maxTemp">32°</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-        
+              <svg
+                className="weather"
+                viewBox="0 0 100 100"
+                width="100%" // Make the image fill its container
+                height="100%" // Make the image fill its container
+              >
+                <image
+                  id="image0"
+                  width="100"
+                  height="100"
+                  x="0"
+                  y="0"
+                  href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                ></image>
+              </svg>
+              <p className="temp">32°</p>
+              <div className="minmaxContainer">
+                <div className="min">
+                  <p className="minHeading">Min</p>
+                  <p className="minTemp">30°</p>
+                </div>
+                <div className="max">
+                  <p className="maxHeading">Max</p>
+                  <p className="maxTemp">32°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </Slider>
     </div>
   );

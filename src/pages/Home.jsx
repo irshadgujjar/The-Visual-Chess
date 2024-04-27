@@ -10,6 +10,7 @@ import Team from "../components/Team.jsx";
 import Timeline from "../components/Timeline.jsx";
 import Testimonials from'./Testimonials.jsx';
 import Faqs from "../components/Faqs.jsx";
+import Marquee from "../components/Marquee.jsx";
 import Contact from "../components/Contact.jsx";
 import Blogs from "../components/Blogs.jsx";
 export default function Home() {
@@ -18,13 +19,14 @@ export default function Home() {
       <HeroSection />
       <WhatWeDo />
       {/* <History /> */}
-      <Reviews />
+      {/* <Reviews /> */}
+      <Blogs />
       <LatestWork />
-      {/* <Blogs /> */}
       <Timeline/>
       <MeetOurTeam />
       {/* <Team /> */}
       <NewsLetter />
+      {/* <Marquee /> */}
       <Testimonials/>
       <Faqs />
       <Contact />
