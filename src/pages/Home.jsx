@@ -19,8 +19,8 @@ export default function Home() {
       <HeroSection />
       <WhatWeDo />
       {/* <History /> */}
-      {/* <Reviews /> */}
-      <Blogs />
+      <Reviews />
+      {/* <Blogs /> */}
       <LatestWork />
       <Timeline/>
       <MeetOurTeam />

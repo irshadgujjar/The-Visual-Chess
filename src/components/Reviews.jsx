@@ -1,33 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Reviews.css';
 
-export default function Reviews() {
+export default function CombinedStats() {
   const [downloads, setDownloads] = useState(0);
   const [subscribers, setSubscribers] = useState(0);
   const [users, setUsers] = useState(0);
   const [cookies, setCookies] = useState(0);
 
   useEffect(() => {
-    // Define initial values for numbers, using localStorage if available
-    const initialDownloads = parseInt(localStorage.getItem('downloads')) || 1400;
-    const initialSubscribers = parseInt(localStorage.getItem('subscribers')) || 1290;
-    const initialUsers = parseInt(localStorage.getItem('users')) || 4830;
-    const initialCookies = parseInt(localStorage.getItem('cookies')) || 2450;
+    const interval = setInterval(() => {
+      setDownloads(prevDownloads => {
+        const targetDownloads = 120;
+        return prevDownloads < targetDownloads ? prevDownloads + 1 : targetDownloads;
+      });
 
-    // Set initial values
-    setDownloads(initialDownloads);
-    setSubscribers(initialSubscribers);
-    setUsers(initialUsers);
-    setCookies(initialCookies);
+      setSubscribers(prevSubscribers => {
+        const targetSubscribers = 340;
+        return prevSubscribers < targetSubscribers ? prevSubscribers + 1 : targetSubscribers;
+      });
+
+      setUsers(prevUsers => {
+        const targetUsers = 25;
+        return prevUsers < targetUsers ? prevUsers + 1 : targetUsers;
+      });
+
+      setCookies(prevCookies => {
+        const targetCookies = 222;
+        return prevCookies < targetCookies ? prevCookies + 1 : targetCookies;
+      });
+    }, 50);
+
+    return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    // Update localStorage with the latest values
-    localStorage.setItem('downloads', downloads.toString());
-    localStorage.setItem('subscribers', subscribers.toString());
-    localStorage.setItem('users', users.toString());
-    localStorage.setItem('cookies', cookies.toString());
-  }, [downloads, subscribers, users, cookies]);
 
   return (
     <div className="right-about">
