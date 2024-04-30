@@ -9,7 +9,6 @@ import MeetOurTeam from "../components/MeetOurTeam.jsx";
 import Timeline from "../components/Timeline.jsx";
 import Testimonials from'./Testimonials.jsx';
 import Faqs from "../components/Faqs.jsx";
-import Marquee from "../components/Marquee.jsx";
 import Contact from "../components/Contact.jsx";
 import Blogs from "../components/Blogs.jsx";
 export default function Home() {
@@ -21,12 +20,11 @@ export default function Home() {
       <Reviews />
       {/* <Blogs /> */}
       {/* <LatestWork /> */}
-      <Timeline/>
       <MeetOurTeam />
-      <NewsLetter />
-      {/* <Marquee /> */}
+      <Timeline/>
       <Testimonials/>
       <Faqs />
+      <NewsLetter />
       <Contact />
     </>
   );
