@@ -1,64 +1,76 @@
 import React, { useState } from "react";
 
 const Accordion = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
   return (
     <section className="relative z-20 overflow-hidden pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
-      <div className="mx-auto max-w-xl text-center">
-        <h2
-          className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
-          style={{
-            color: "#BEBAE0",
-            background: "#160A33",
-            // boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-          }}
-        >
-          FAQs
-        </h2>
-
-        {/* Subtitle */}
-        <p className="mt-4 text-3xl font-bold mb-10 text-white leading-relaxed text-gray-600">
-         Any question ? Look{" "}
-          <span style={{ color: "#BEBAE0", fontSize: "1.1em" }}>
-            Here{" "}
-          </span>{" "}
-          &#x25AA;
-        </p>
-      </div>
-
+        <div className="mx-auto max-w-xl text-center">
+          <h2
+            className="mt-6 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl rounded-lg p-4"
+            style={{
+              color: "#bebae0",
+              background: "#160A33",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+            }}
+          >
+            FAQs
+          </h2>
+          {/* Subtitle */}
+          <p className="mt-4 text-3xl font-bold mb-10 text-white leading-relaxed text-white">
+            Any question? Look{" "}
+            <span style={{ color: "#BEBAE0", fontSize: "1.1em" }}>Here </span>{" "}
+            &#x25AA;
+          </p>
+        </div>
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2 " style={{ color: "#BEBAE0" }}>
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              isActive={activeIndex === 0}
+              onClick={() => handleToggle(0)}
             />
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              isActive={activeIndex === 1}
+              onClick={() => handleToggle(1)}
             />
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              isActive={activeIndex === 2}
+              onClick={() => handleToggle(2)}
             />
           </div>
           <div className="w-full px-4 lg:w-1/2" style={{ color: "#BEBAE0" }}>
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              isActive={activeIndex === 3}
+              onClick={() => handleToggle(3)}
             />
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              isActive={activeIndex === 4}
+              onClick={() => handleToggle(4)}
             />
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              isActive={activeIndex === 5}
+              onClick={() => handleToggle(5)}
             />
           </div>
         </div>
       </div>
-
       <div className="absolute bottom-0 right-0 z-[-1]">
         <svg
           width="1440"
@@ -81,9 +93,9 @@ const Accordion = () => {
               y2="-418.681"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BEBAE0" stop-opacity="0.36" />
-              <stop offset="1" stop-color="#BEBAE0" stop-opacity="0" />
-              <stop offset="1" stop-color="#BEBAE0" stop-opacity="0.096144" />
+              <stop stopColor="#BEBAE0" stopOpacity="0.36" />
+              <stop offset="1" stopColor="#BEBAE0" stopOpacity="0" />
+              <stop offset="1" stopColor="#BEBAE0" stopOpacity="0.096144" />
             </linearGradient>
           </defs>
         </svg>
@@ -94,26 +106,17 @@ const Accordion = () => {
 
 export default Accordion;
 
-const AccordionItem = ({ header, text }) => {
-  const [active, setActive] = useState(false);
-
-  const handleToggle = () => {
-    event.preventDefault();
-    setActive(!active);
-  };
+const AccordionItem = ({ header, text, isActive, onClick }) => {
   return (
     <div
-      className="mb-8 w-full rounded-lg  p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8"
+      className="mb-8 w-full rounded-lg p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8"
       style={{ background: "#160a334a" }}
     >
-      <button
-        className={`faq-btn flex w-full text-left`}
-        onClick={() => handleToggle()}
-      >
+      <button className={`faq-btn flex w-full text-left`} onClick={onClick}>
         <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
           <svg
             className={`fill-primary stroke-primary duration-200 ease-in-out ${
-              active ? "rotate-180" : ""
+              isActive ? "rotate-180" : ""
             }`}
             width="17"
             height="10"
@@ -127,17 +130,15 @@ const AccordionItem = ({ header, text }) => {
             />
           </svg>
         </div>
-
         <div className="w-full">
           <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
             {header}
           </h4>
         </div>
       </button>
-
       <div
         className={`pl-[62px] duration-200 ease-in-out ${
-          active ? "block" : "hidden"
+          isActive ? "block" : "hidden"
         }`}
       >
         <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
