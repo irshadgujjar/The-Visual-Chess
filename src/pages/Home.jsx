@@ -21,7 +21,7 @@ export default function Home() {
       {/* <History /> */}
       <Reviews />
       {/* <Blogs /> */}
-      <LatestWork />
+      {/* <LatestWork /> */}
       <Timeline/>
       <MeetOurTeam />
       {/* <Team /> */}

@@ -11,7 +11,7 @@ export default function CardSlider() {
     function handleResize() {
       // Adjust the number of slides to show based on screen width
       if (window.innerWidth >= 1024) {
-        setSlidesToShow(5);
+        setSlidesToShow(4);
       } else if (window.innerWidth >= 768) {
         setSlidesToShow(3);
       } else if (window.innerWidth >= 480) {

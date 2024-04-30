@@ -4,6 +4,8 @@
   width: 100% !important;
   max-width: 450px !important;
   animation: bounce-infinite 5s infinite;
+  transition: transform 0.3s ease;
+  transform: scale(2.1);
 }
 
 @keyframes bounce-infinite {
@@ -18,14 +20,10 @@
   }
 }
 
-.hero-image:hover {
-  transform: scale(1.1); /* Zoom in on hover */
-}
-
 .icon-box {
   display: inline-block;
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #bebae0;
   border-radius: 8px;
   transition: border-color 0.3s ease-in-out;
 }
@@ -36,7 +34,7 @@
 
 .icon {
   font-size: 24px;
-  color: #bebae0;
+  color: #ffffff;
 }
 
 .icon-box:hover .icon {

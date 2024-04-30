@@ -86,14 +86,19 @@ export default function NewsLetter() {
             </form>
           </div>
 
-          <div className="p-8 text-center text-white">
+          {/* <div className="p-8 text-center text-white">
             <img
               src={Logo}
               alt="Logo"
               className="mx-auto mb-8"
               style={{ width: "100%", maxWidth: "350px" }}
             />
-          </div>
+          </div> */}
+
+          
+<div className="w-full lg:w-1/2 ml-3">
+  <img src={Logo} className="h-full w-full ml-10 hero-image" />
+</div>
         </div>
       </div>
     </div>
