@@ -15,6 +15,10 @@ const menuItems = [
     name: 'Portfolio',
     href: '/portfolio',
   },
+  {
+    name: 'Blogs',
+    href: '/blogs',
+  },
 ];
 
 export default function Navbar() {

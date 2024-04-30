@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home.jsx';
 import AboutUs from './pages/AboutUs.jsx';
-import Testimonials from './pages/Testimonials.jsx';
+import Blogs from './pages/Blogs.jsx';
 import Contact from './pages/Contact.jsx';
 import Team from './pages/Team.jsx';
 import Portfolio from './pages/Portfolio.jsx';
@@ -16,7 +16,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/portfolio" element={<Portfolio />} />

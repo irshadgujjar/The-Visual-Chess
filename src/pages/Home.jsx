@@ -7,10 +7,10 @@ import NewsLetter from "../components/NewsLetter.jsx";
 import LatestWork from "../components/LatestWork.jsx";
 import MeetOurTeam from "../components/MeetOurTeam.jsx";
 import Timeline from "../components/Timeline.jsx";
-import Testimonials from'./Testimonials.jsx';
+import Testimonials from'../components/Testimonials.jsx';
 import Faqs from "../components/Faqs.jsx";
 import Contact from "../components/Contact.jsx";
-import Blogs from "../components/Blogs.jsx";
+
 export default function Home() {
   return (
     <>
@@ -18,7 +18,7 @@ export default function Home() {
       <WhatWeDo />
       {/* <History /> */}
       <Reviews />
-      {/* <Blogs /> */}
+  
       {/* <LatestWork /> */}
       <MeetOurTeam />
       <Timeline/>
