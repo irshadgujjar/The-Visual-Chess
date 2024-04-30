@@ -22,6 +22,7 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<Home />} />
         </Routes>
+       
         <Footer/>
       </>
   );
