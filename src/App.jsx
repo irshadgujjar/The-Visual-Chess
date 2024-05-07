@@ -4,7 +4,6 @@ import Home from './pages/Home.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import Blogs from './pages/Blogs.jsx';
 import Contact from './pages/Contact.jsx';
-import Team from './pages/Team.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -18,7 +17,6 @@ export default function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/team" element={<Team />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<Home />} />
         </Routes>
