@@ -3,6 +3,65 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+<div className="px-4 py-16 mt-1 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="flex flex-col max-w-screen-lg overflow-hidden border rounded shadow-sm lg:flex-row sm:mx-auto">
+        <div className="relative lg:w-1/2">
+          <img
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            alt=""
+            className="object-cover w-full lg:absolute h-80 lg:h-full"
+          />
+          <svg
+            className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
+            viewBox="0 0 20 104"
+            fill="#bebae0"
+          >
+            <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
+          </svg>
+        </div>
+        <div className="flex flex-col justify-center p-8 bg-[#bebae0] lg:p-16 lg:pl-10 lg:w-1/2">
+          <div>
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#bebae0] uppercase rounded-full bg-[#160a33]">
+              Brand new
+            </p>
+          </div>
+          <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
+            Your new ideal style
+          </h5>
+          <p className="mb-5 text-gray-800">
+            <span className="font-bold">Lorem ipsum</span> dolor sit amet,
+            consectetur adipiscing elit. Etiam sem neque, molestie sit amet
+            venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend,
+            sed consequat odio sollicitudin.
+          </p>
+          <div className="flex items-center">
+            <button
+              type="submit"
+              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#160a33] focus:shadow-outline focus:outline-none"
+            >
+              Get started
+            </button>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn More
+              <svg
+                className="inline-block w-3 ml-2"
+                fill="#bebae0"
+                viewBox="0 0 12 12"
+              >
+                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
       <div className="max-w-2xl lg:max-w-5xl mx-auto">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
@@ -93,7 +152,7 @@ export default function Contact() {
               <div className="mt-4 grid">
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#160a33] text-white hover:bg-[#160a33] disabled:opacity-50 disabled:pointer-events-none"
+                  className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#bebae0] text-[#160a33] hover:bg-[#bebae0] disabled:opacity-50 disabled:pointer-events-none"
                 >
                   Send inquiry
                 </button>

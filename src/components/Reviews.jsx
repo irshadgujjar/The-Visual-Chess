@@ -34,7 +34,7 @@ export default function CombinedStats() {
   }, []);
 
   return (
-    <div className="right-about">
+    <div className="right-about mt-12">
       <div className="about-item">
         <h2 className="large-text">{downloads}+</h2>
         <p className="small-text">Downloads</p>

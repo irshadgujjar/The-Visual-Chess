@@ -28,7 +28,7 @@ const Accordion = () => {
             &#x25AA;
           </p>
         </div>
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap ">
           <div className="w-full px-4 lg:w-1/2 " style={{ color: "#BEBAE0" }}>
             <AccordionItem
               header="How long we deliver your first blog post?"
@@ -113,7 +113,7 @@ const AccordionItem = ({ header, text, isActive, onClick }) => {
       style={{ background: "#160a334a" }}
     >
       <button className={`faq-btn flex w-full text-left`} onClick={onClick}>
-        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
+        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-[#bebae0] text-[#160a33]">
           <svg
             className={`fill-primary stroke-primary duration-200 ease-in-out ${
               isActive ? "rotate-180" : ""

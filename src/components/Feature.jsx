@@ -29,7 +29,7 @@ export default function Feature() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-pink-500/10">
+          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-[#bebae0-500/10]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="size-10 text-pink-500"
@@ -58,7 +58,7 @@ export default function Feature() {
             </p>
           </a>
 
-          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-pink-500/10">
+          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-[#bebae0-500/10]">
       
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function Feature() {
             </p>
           </a>
 
-          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-pink-500/10">
+          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-[#bebae0-500/10]">
       
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ export default function Feature() {
             </p>
           </a>
 
-          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-pink-500/10">
+          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-[#bebae0-500/10]">
       
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ export default function Feature() {
               laudantium.
             </p>
           </a>
-          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-pink-500/10">
+          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-[#bebae0-500/10]">
       
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@ export default function Feature() {
             </p>
           </a>
 
-          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-pink-500/10">
+          <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-[#bebae0] hover:shadow-[#bebae0-500/10]">
       
             <svg
               xmlns="http://www.w3.org/2000/svg"
