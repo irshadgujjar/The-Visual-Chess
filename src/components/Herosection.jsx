@@ -15,13 +15,11 @@ export default function Head() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <section>
-      <div className=" px-8 lg:flex lg:flex-row lg:items-center mt-4">
+      <div className="px-8 lg:flex lg:flex-row lg:items-center mt-4">
         <div
           className="relative isolate overflow-hidden shadow-2xl sm:rounded-3xl sm:px-16 lg:flex lg:gap-x-20 lg:px-24 border border-gray-600 w-full"
           style={{ background: "#0a0417" }}
         >
-          {/* <div className="mx-auto mt-8 sm:px-6 lg:px-8"> */}
-
           <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
@@ -101,22 +99,12 @@ export default function Head() {
                 </div>
               </div>
             </div>
-            {/*         
-            <img
-              src={Logo}
-              alt="Logo"
-              className="hero-image display-center"
-            />
-          */}
-
-<div className="w-full lg:w-1/2 ml-3">
-  <img src={Logo} className="h-full w-full ml-10 hero-image" />
-</div>
-
+            <div className="w-full lg:w-1/2 ml-3">
+              <img src={Logo} className="h-full w-full ml-10 hero-image" />
+            </div>
           </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 }

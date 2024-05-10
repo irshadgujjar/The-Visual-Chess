@@ -1,8 +1,7 @@
-/* HeroSection.css */
 
 .hero-image {
-  width: 100% !important;
-  max-width: 450px !important;
+  width: 100%;
+  max-width: 450px;
   animation: bounce-infinite 5s infinite;
   transition: transform 0.3s ease;
   transform: scale(2.1);
@@ -30,7 +29,6 @@
 
 .icon-box:hover {
   border-color: #bebae0;
-
 }
 
 .icon {
@@ -40,4 +38,15 @@
 
 .icon-box:hover .icon {
   color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-image {
+    transform: scale(1.2); /* Adjust scaling for smaller screens */
+  }
+
+  .icon-box {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
 }
