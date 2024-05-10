@@ -1,0 +1,95 @@
+.testimonials {
+    margin-top: 50px;
+  }
+  
+  .slick-slider {
+    margin: 0 auto;
+    max-width: 900px; 
+  }
+  
+  .testimonial-slide {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #160a33;
+    padding: 20px;
+    border: 1px solid #bebae0; 
+    border-radius: 10px; /* Example border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonial-content svg {
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .author-info {
+    text-align: center;
+  }
+  
+  .author-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .author-role {
+    color: #ccc;
+    font-size: 16px;
+  }
+  
+
+  .slick-slider {
+    margin: 0 auto;
+    max-width: 1000px; /* Adjust the width as needed */
+    position: relative; /* Position relative for absolute positioning of arrows */
+  }
+  
+  .prev-arrow,
+  .next-arrow {
+    position: absolute;
+    bottom: 20px; /* Positioning the arrows at the bottom */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev-arrow {
+    left: 50px; /* Adjust left positioning */
+  }
+  
+  .next-arrow {
+    right: 50px; /* Adjust right positioning */
+  }
+  
+  .prev-arrow svg,
+  .next-arrow svg {
+    width: 30px;
+    height: 30px;
+    fill: #bebae0;
+  }
+  
+  .prev-arrow:hover svg,
+  .next-arrow:hover svg {
+    fill: #bebae0;
+  }
+  
+  

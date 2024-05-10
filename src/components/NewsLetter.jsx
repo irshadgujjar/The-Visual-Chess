@@ -6,26 +6,65 @@ export default function NewsLetter() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="mx-auto mt-8 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-xl text-center">
+      {/* <div className="mx-auto max-w-xl text-center">
         <h2
           className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
           style={{
             color: "#BEBAE0",
             background: "#160A33",
-            // boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
+         
             border: "1px solid rgba(255, 255, 255, 0.1)",
           }}
         >
           Don't be Shy say Hi !!
         </h2>
 
-        {/* Subtitle */}
         <p className="mt-4 text-3xl font-bold text-white leading-relaxed text-gray-600">
           Stay informed with the latest industry trends, insights, and tips{" "}
           <span style={{ color: "#BEBAE0", fontSize: "1.1em" }}>
             {" "}
             &#x25AA;{" "}
           </span>{" "}
+        </p>
+      </div> */}
+
+<div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div>
+          <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
+           NewsLetter
+          </p>
+        </div>
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
+          <span className="relative inline-block ">
+            <svg
+              viewBox="0 0 52 24"
+              fill="#bebae0"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-[#bebae0] lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+            >
+              <defs>
+                <pattern
+                  id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
+                  x="0"
+                  y="0"
+                  width=".135"
+                  height=".30"
+                >
+                  <circle cx="1" cy="1" r=".7" />
+                </pattern>
+              </defs>
+              <rect
+                fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
+                width="52"
+                height="24"
+              />
+            </svg>
+            <span className="relative text-[#bebae0]">The</span>
+          </span>{" "}
+          quick, brown fox jumps over a lazy dog
+        </h2>
+        <p className="text-base text-[#bebae0] md:text-lg">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
 

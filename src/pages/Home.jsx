@@ -22,9 +22,10 @@ export default function Home() {
       <Reviews />
   <Steps/>
       <LatestWork />
-      <MeetOurTeam />
      
-      {/* <Mobile /> */}
+     
+       <Mobile /> 
+       <MeetOurTeam />
        {/* <Timeline/> */}
       <Testimonials/>
       <Faqs />

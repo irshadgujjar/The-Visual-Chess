@@ -6,7 +6,7 @@ export default function Steps() {
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
-            Brand new
+            Why Us ?
           </p>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
@@ -42,46 +42,6 @@ export default function Steps() {
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
-      <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
-        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">The doctor said</h6>
-            <p className="text-sm text-[#160a33]">
-              Sportacus andrew weatherall goose Refined gentlemen super mario
-              des lynam alpha trion zap rowsdower.
-            </p>
-          </div>
-        </div>
-        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">Skate ipsum dolor</h6>
-            <p className="text-sm text-[#160a33]">
-              Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">
-              Baseball ipsum dolor
-            </h6>
-            <p className="text-sm text-[#160a33]">
-              Bro ipsum dolor sit amet gaper backside single track, manny Bike
-              epic clipless. Schraeder drop gondy.
-            </p>
-          </div>
-        </div>
-        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
-          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
-            <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
-            <p className="text-sm text-[#160a33]">
-              A flower in my garden, a mystery in my panties. Heart attack never
-              stopped old Big Bear.
-            </p>
-          </div>
-        </div>
-      </div>
-
 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto justify-center">
   <div className="relative p-6 md:p-16">
@@ -168,6 +128,48 @@ export default function Steps() {
     {/* <!-- End Background Color --> */}
   </div>
 </div>
+
+
+      {/* <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
+        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
+          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5">The doctor said</h6>
+            <p className="text-sm text-[#160a33]">
+              Sportacus andrew weatherall goose Refined gentlemen super mario
+              des lynam alpha trion zap rowsdower.
+            </p>
+          </div>
+        </div>
+        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
+          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5">Skate ipsum dolor</h6>
+            <p className="text-sm text-[#160a33]">
+              Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
+          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5">
+              Baseball ipsum dolor
+            </h6>
+            <p className="text-sm text-[#160a33]">
+              Bro ipsum dolor sit amet gaper backside single track, manny Bike
+              epic clipless. Schraeder drop gondy.
+            </p>
+          </div>
+        </div>
+        <div className="duration-300 transform bg-[#bebae0] border-l-4 border-deep-purple-accent-400 hover:-translate-y-2">
+          <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
+            <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
+            <p className="text-sm text-[#160a33]">
+              A flower in my garden, a mystery in my panties. Heart attack never
+              stopped old Big Bear.
+            </p>
+          </div>
+        </div>
+      </div> */}
+    
 
     </div>
   );

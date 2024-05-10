@@ -1,268 +1,130 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-// import "../styles/MeetOurTeam.css"; 
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../styles/Testimonials.css';
 
-export default function CardSlider() {
-  const [slidesToShow, setSlidesToShow] = useState();
-
-  useEffect(() => {
-    function handleResize() {
-      // Adjust the number of slides to show based on screen width
-      if (window.innerWidth >= 1024) {
-        setSlidesToShow(2);
-      } else if (window.innerWidth >= 768) {
-        setSlidesToShow(3);
-      } else if (window.innerWidth >= 480) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(1);
-      }
-    }
-
-    // Add event listener to handle window resize
-    window.addEventListener("resize", handleResize);
-
-    // Call handleResize to set initial number of slides to show
-    handleResize();
-
-    // Remove event listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+export default function Testimonials() {
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 300,
-    slidesToShow: slidesToShow,
+    speed: 1000,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
     arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
-  function CustomPrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "#bebae0",
-          borderRadius: "50%",
-          padding: "10px",
-          zIndex: "1", 
-          left: "0",
-          transform: "translate(-5%, -50%)", // Center arrow vertically and horizontally
-        }}
-        onClick={onClick}
-      />
-    );
-  }
-
-  function CustomNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          background: "#bebae0",
-          borderRadius: "50%",
-          padding: "10px",
-          zIndex: "1",
-          right: "0",
-          transform: "translate(-5%, -50%)", // Center arrow vertically and horizontally
-        }}
-        onClick={onClick}
-      />
-    );
-  }
-
   return (
-    <div className="slider-container overflow-hidden">
-      <div className="mx-auto max-w-xl text-center">
-        <h2
-          className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
-          style={{
-            color: "#BEBAE0",
-            background: "#160A33",
-            // boxShadow: "inset 0 0 10px rgba(0,0,0,0.5)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-          }}
-        >
-        What our client say ?
-        </h2>
-
-        {/* Subtitle */}
-        <p className="mt-4 text-3xl font-bold text-white leading-relaxed text-gray-600">
-          People who made it{" "}
-          <span style={{ color: "#BEBAE0", fontSize: "1.1em" }}>
-            successful{" "}
+    <section className="testimonials mt-16">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div>
+          <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
+            Testimonials
+          </p>
+        </div>
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
+          <span className="relative inline-block ">
+            <svg
+              viewBox="0 0 52 24"
+              fill="#bebae0"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-[#bebae0] lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+            >
+              <defs>
+                <pattern
+                  id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
+                  x="0"
+                  y="0"
+                  width=".135"
+                  height=".30"
+                >
+                  <circle cx="1" cy="1" r=".7" />
+                </pattern>
+              </defs>
+              <rect
+                fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
+                width="52"
+                height="24"
+              />
+            </svg>
+            <span className="relative text-[#bebae0]">The</span>
           </span>{" "}
-          &#x25AA;
+          quick, brown fox jumps over a lazy dog
+        </h2>
+        <p className="text-base text-[#bebae0] md:text-lg">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
+      <div className="container mx-auto px-4 md:px-8">
+        <Slider {...settings} className="slick-slider">
+          <div className="testimonial-slide">
+            <div className="testimonial-content">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#bebae0" className="w-16 h-16 text-violet-600">
+                <polygon points="328.375 384 332.073 458.999 256.211 406.28 179.924 459.049 183.625 384 151.586 384 146.064 496 182.756 496 256.169 445.22 329.242 496 365.936 496 360.414 384 328.375 384"></polygon>
+                <path d="M415.409,154.914l-2.194-48.054L372.7,80.933,346.768,40.414l-48.055-2.2L256,16.093,213.287,38.219l-48.055,2.2L139.3,80.933,98.785,106.86l-2.194,48.054L74.464,197.628l22.127,42.715,2.2,48.053L139.3,314.323l25.928,40.52,48.055,2.195L256,379.164l42.713-22.126,48.055-2.195,25.928-40.52L413.214,288.4l2.195-48.053,22.127-42.715Zm-31.646,76.949L382,270.377l-32.475,20.78-20.78,32.475-38.515,1.76L256,343.125l-34.234-17.733-38.515-1.76-20.78-32.475L130,270.377l-1.759-38.514L110.5,197.628,128.237,163.4,130,124.88,162.471,104.1l20.78-32.474,38.515-1.76L256,52.132l34.234,17.733,38.515,1.76,20.78,32.474L382,124.88l1.759,38.515L401.5,197.628Z"></path>
+              </svg>
+              <p className="testimonial-text">"Veniam quidem animi ea maxime odit fugiat architecto perferendis ipsum perspiciatis iusto, provident qui nam dolorum corporis."</p>
+              <div className="testimonial-author">
+                    <div className="author-info">
+                  <p className="author-name">Leroy Jenkins</p>
+                  <p className="author-role">Founder, Company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial-slide">
+            <div className="testimonial-content">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#bebae0" className="w-16 h-16 text-violet-600">
+                <polygon points="328.375 384 332.073 458.999 256.211 406.28 179.924 459.049 183.625 384 151.586 384 146.064 496 182.756 496 256.169 445.22 329.242 496 365.936 496 360.414 384 328.375 384"></polygon>
+                <path d="M415.409,154.914l-2.194-48.054L372.7,80.933,346.768,40.414l-48.055-2.2L256,16.093,213.287,38.219l-48.055,2.2L139.3,80.933,98.785,106.86l-2.194,48.054L74.464,197.628l22.127,42.715,2.2,48.053L139.3,314.323l25.928,40.52,48.055,2.195L256,379.164l42.713-22.126,48.055-2.195,25.928-40.52L413.214,288.4l2.195-48.053,22.127-42.715Zm-31.646,76.949L382,270.377l-32.475,20.78-20.78,32.475-38.515,1.76L256,343.125l-34.234-17.733-38.515-1.76-20.78-32.475L130,270.377l-1.759-38.514L110.5,197.628,128.237,163.4,130,124.88,162.471,104.1l20.78-32.474,38.515-1.76L256,52.132l34.234,17.733,38.515,1.76,20.78,32.474L382,124.88l1.759,38.515L401.5,197.628Z"></path>
+              </svg>
+              <p className="testimonial-text">"Veniam quidem animi ea maxime odit fugiat architecto perferendis ipsum perspiciatis iusto, provident qui nam dolorum corporis."</p>
+              <div className="testimonial-author">
+                {/* <img src="https://source.unsplash.com/80x80/?portrait?2" alt="" className="author-avatar" />
+                 */}
+                <div className="author-info">
+                  <p className="author-name">Alice Johnson</p>
+                  <p className="author-role">CEO, Company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </section>
+  );
+}
 
-      <Slider {...settings}>
-      <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg ">
-          <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-[#160a33]">
-            <p className="relative px-6 py-1 text-lg italic text-center text-[#bebae0]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="w-8 h-8"
-              >
-                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-              </svg>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus quibusdam, eligendi exercitationem molestias possimus
-              facere.
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="absolute right-0 w-8 h-8 "
-              >
-                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-              </svg>
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-[#bebae0] dark:text-gray-50">
-            <img
-              src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1713312000&semt=ais"
-              alt=""
-              className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
-            />
-            <p className="text-xl font-semibold leading-tight text-[#160a33]">
-              Distinctio Animi
-            </p>
-          </div>
-        </div>
+// Custom previous arrow component
+function CustomPrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <button onClick={onClick} className="prev-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#bebae0" className="w-6 h-6 text-gray-500">
+        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+      </svg>
+    </button>
+  );
+}
 
-        <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg ">
-          <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-[#160a33]">
-            <p className="relative px-6 py-1 text-lg italic text-center text-[#bebae0]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="w-8 h-8"
-              >
-                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-              </svg>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus quibusdam, eligendi exercitationem molestias possimus
-              facere.
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="absolute right-0 w-8 h-8 "
-              >
-                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-              </svg>
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-[#bebae0] dark:text-gray-50">
-            <img
-              src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1713312000&semt=ais"
-              alt=""
-              className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
-            />
-            <p className="text-xl font-semibold leading-tight text-[#160a33]">
-              Distinctio Animi
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg ">
-          <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-[#160a33]">
-            <p className="relative px-6 py-1 text-lg italic text-center text-[#bebae0]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="w-8 h-8"
-              >
-                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-              </svg>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus quibusdam, eligendi exercitationem molestias possimus
-              facere.
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="absolute right-0 w-8 h-8 "
-              >
-                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-              </svg>
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-[#bebae0] dark:text-gray-50">
-            <img
-              src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1713312000&semt=ais"
-              alt=""
-              className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
-            />
-            <p className="text-xl font-semibold leading-tight text-[#160a33]">
-              Distinctio Animi
-            </p>
-          </div>
-        </div>
-
-
-      <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg ">
-          <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-[#160a33]">
-            <p className="relative px-6 py-1 text-lg italic text-center text-[#bebae0]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="w-8 h-8"
-              >
-                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-              </svg>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatibus quibusdam, eligendi exercitationem molestias possimus
-              facere.
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                fill="#bebae0"
-                className="absolute right-0 w-8 h-8 "
-              >
-                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
-                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
-              </svg>
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-[#bebae0] dark:text-gray-50">
-            <img
-              src="https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1713312000&semt=ais"
-              alt=""
-              className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
-            />
-            <p className="text-xl font-semibold leading-tight text-[#160a33]">
-              Distinctio Animi
-            </p>
-          </div>
-        </div>
-      </Slider>
-    </div>
+// Custom next arrow component
+function CustomNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <button onClick={onClick} className="next-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#bebae0" className="w-6 h-6 text-gray-500">
+        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+      </svg>
+    </button>
   );
 }
