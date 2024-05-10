@@ -23,8 +23,9 @@ export default function Home() {
   <Steps/>
       <LatestWork />
       <MeetOurTeam />
-      {/* <Timeline/> */}
+     
       {/* <Mobile /> */}
+       {/* <Timeline/> */}
       <Testimonials/>
       <Faqs />
       <NewsLetter />
