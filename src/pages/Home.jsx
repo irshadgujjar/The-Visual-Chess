@@ -7,7 +7,7 @@ import Steps from "../components/Steps.jsx";
 import LatestWork from "../components/LatestWork.jsx";
 import MeetOurTeam from "../components/MeetOurTeam.jsx";
 import Timeline from "../components/Timeline.jsx";
-import Testimonials from'../components/Testimonials.jsx';
+import Testimonials from "../components/Testimonials.jsx";
 import Faqs from "../components/Faqs.jsx";
 import NewsLetter from "../components/NewsLetter.jsx";
 import Contact from "../components/Contact.jsx";
@@ -20,14 +20,12 @@ export default function Home() {
       {/* <WhatWeDo /> */}
       {/* <History /> */}
       <Reviews />
-  <Steps/>
+      <Steps />
       <LatestWork />
-     
-     
-       <Mobile /> 
-       <MeetOurTeam />
-       {/* <Timeline/> */}
-      <Testimonials/>
+      <Mobile />
+      <MeetOurTeam />
+      {/* <Timeline/> */}
+      <Testimonials />
       <Faqs />
       <NewsLetter />
       <Contact />
