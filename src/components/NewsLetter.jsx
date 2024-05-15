@@ -28,10 +28,10 @@ export default function NewsLetter() {
         </p>
       </div> */}
 
-<div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
-           NewsLetter
+            NewsLetter
           </p>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
@@ -125,19 +125,14 @@ export default function NewsLetter() {
             </form>
           </div>
 
-          {/* <div className="p-8 text-center text-white">
+          <div className="w-full lg:w-1/2 ml-3 flex justify-center items-center ml-60">
             <img
               src={Logo}
               alt="Logo"
-              className="mx-auto mb-8"
-              style={{ width: "100%", maxWidth: "350px" }}
+              className="max-w-full h-auto"
+              style={{ height: "350px" }}
             />
-          </div> */}
-
-          
-<div className="w-full lg:w-1/2 ml-3">
-  <img src={Logo} className="h-full w-full ml-10 hero-image" />
-</div>
+          </div>
         </div>
       </div>
     </div>

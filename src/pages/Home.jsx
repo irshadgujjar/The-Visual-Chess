@@ -12,14 +12,17 @@ import Faqs from "../components/Faqs.jsx";
 import NewsLetter from "../components/NewsLetter.jsx";
 import Contact from "../components/Contact.jsx";
 import Mobile from "../components/Mobile.jsx";
+import Stylish from "../components/Stylish.jsx";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+  
       {/* <WhatWeDo /> */}
       {/* <History /> */}
       <Reviews />
+      <Stylish />
       <Steps />
       <LatestWork />
       <Mobile />
