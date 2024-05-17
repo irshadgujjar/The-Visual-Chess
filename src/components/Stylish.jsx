@@ -1,5 +1,9 @@
 import React from "react";
 import "../styles/Stylish.css";
+import Software from "../assets/Software.gif";
+import UI from "../assets/UI.gif";
+import Mobile from "../assets/Mobile.gif";
+import STAFF from "../assets/STAFF .gif";
 
 export default function Stylish() {
   return (
@@ -47,10 +51,7 @@ export default function Stylish() {
         {/* Repeat this block for each service */}
         <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4 ">
           <div className="profile-pic">
-            <img
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif"
-              alt="sevice"
-            />
+            <img src={UI}></img>
           </div>
 
           <div className="bottom">
@@ -70,10 +71,7 @@ export default function Stylish() {
         {/* Repeat this block for each service */}
         <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
           <div className="profile-pic">
-            <img
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif"
-              alt="sevice"
-            />
+            <img src={Software}></img>
           </div>
           <div className="bottom">
             <div className="content ">
@@ -92,10 +90,7 @@ export default function Stylish() {
         {/* Repeat this block for each service */}
         <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
           <div className="profile-pic">
-            <img
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif"
-              alt="sevice"
-            />
+            <img src={STAFF}></img>
           </div>
 
           <div className="bottom">
@@ -114,33 +109,7 @@ export default function Stylish() {
         {/* Repeat this block for each service */}
         <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
           <div className="profile-pic">
-            <img
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif"
-              alt="sevice"
-            />
-          </div>
-
-          <div className="bottom">
-            <div className="content ">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls{" "}
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
-          </div>
-        </div>
-        {/* End of service block */}
-
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
-          <div className="profile-pic">
-            <img
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif"
-              alt="sevice"
-            />
+            <img src={Mobile}></img>
           </div>
 
           <div className="bottom">
@@ -160,10 +129,27 @@ export default function Stylish() {
         {/* Repeat this block for each service */}
         <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
           <div className="profile-pic">
-            <img
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif"
-              alt="sevice"
-            />
+            <img src={UI}></img>
+          </div>
+
+          <div className="bottom">
+            <div className="content ">
+              <span className="about-me">
+                Lorem ipsum dolor sit amet consectetur adipisicinFcls
+                consectetur adipisicinFcls{" "}
+              </span>
+            </div>
+            <div className="bottom-bottom">
+              <button className="button">Web Development</button>
+            </div>
+          </div>
+        </div>
+        {/* End of service block */}
+
+        {/* Repeat this block for each service */}
+        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
+          <div className="profile-pic">
+            <img src={UI}></img>
           </div>
 
           <div className="bottom">
