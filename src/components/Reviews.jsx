@@ -28,7 +28,7 @@ export default function CombinedStats() {
         const targetCookies = 222;
         return prevCookies < targetCookies ? prevCookies + 1 : targetCookies;
       });
-    }, 50);
+    }, 2); // Increase interval to 20 milliseconds
 
     return () => clearInterval(interval);
   }, []);

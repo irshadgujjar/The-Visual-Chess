@@ -2,8 +2,8 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
-       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 lg:pb-[90px] ">
+      <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
             Solutions
@@ -42,9 +42,11 @@ const Pricing = () => {
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
+      
       <div className="container mx-auto">
-       
 
+
+        
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="-mx-4 flex flex-wrap text-[#bebae0]">
             <PricingCard

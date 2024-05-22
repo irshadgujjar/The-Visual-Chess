@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../styles/MeetOurTeam.css"; // Your custom styles
+import "../styles/MeetOurTeam.css";
+import STAFF from "../assets/STAFF .gif";
 
 export default function CardSlider() {
   const [slidesToShow, setSlidesToShow] = useState();
 
   useEffect(() => {
     function handleResize() {
-      // Adjust the number of slides to show based on screen width
       if (window.innerWidth >= 1024) {
         setSlidesToShow(4);
       } else if (window.innerWidth >= 768) {
@@ -108,11 +108,10 @@ export default function CardSlider() {
           &#x25AA;
         </p>
       </div> */}
-
-<div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+<div className="max-w-xl  md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
-            Our Team
+            Meet Our Team
           </p>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
@@ -153,23 +152,8 @@ export default function CardSlider() {
         <div className="slider-item">
           <div className="cardContainer">
             <div className="card">
-              <p className="city">PINK CITY</p>
-
-              <svg
-                className="weather"
-                viewBox="0 0 100 100"
-                width="100%" // Make the image fill its container
-                height="100%" // Make the image fill its container
-              >
-                <image
-                  id="image0"
-                  width="100"
-                  height="100"
-                  x="0"
-                  y="0"
-                  href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
-                ></image>
-              </svg>
+              <p className="city">DEVELOPER</p>
+              <img src={STAFF} alt="" srcset="" />
               <p className="temp">32°</p>
               <div className="minmaxContainer">
                 <div className="min">
@@ -188,23 +172,8 @@ export default function CardSlider() {
         <div className="slider-item">
           <div className="cardContainer">
             <div className="card">
-              <p className="city">PINK CITY</p>
-
-              <svg
-                className="weather"
-                viewBox="0 0 100 100"
-                width="100%" // Make the image fill its container
-                height="100%" // Make the image fill its container
-              >
-                <image
-                  id="image0"
-                  width="100"
-                  height="100"
-                  x="0"
-                  y="0"
-                  href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
-                ></image>
-              </svg>
+              <p className="city">DEVELOPER</p>
+              <img src={STAFF} alt="" srcset="" />
               <p className="temp">32°</p>
               <div className="minmaxContainer">
                 <div className="min">
@@ -223,23 +192,9 @@ export default function CardSlider() {
         <div className="slider-item">
           <div className="cardContainer">
             <div className="card">
-              <p className="city">PINK CITY</p>
+              <p className="city">DEVELOPER</p>
 
-              <svg
-                className="weather"
-                viewBox="0 0 100 100"
-                width="100%"
-                height="100%"
-              >
-                <image
-                  id="image0"
-                  width="100"
-                  height="100"
-                  x="0"
-                  y="0"
-                  href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
-                ></image>
-              </svg>
+              <img src={STAFF} alt="" srcset="" />
               <p className="temp">32°</p>
               <div className="minmaxContainer">
                 <div className="min">
@@ -257,23 +212,8 @@ export default function CardSlider() {
         <div className="slider-item">
           <div className="cardContainer">
             <div className="card">
-              <p className="city">PINK CITY</p>
-
-              <svg
-                className="weather"
-                viewBox="0 0 100 100"
-                width="100%" // Make the image fill its container
-                height="100%" // Make the image fill its container
-              >
-                <image
-                  id="image0"
-                  width="100"
-                  height="100"
-                  x="0"
-                  y="0"
-                  href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
-                ></image>
-              </svg>
+              <p className="city">DEVELOPER</p>
+              <img src={STAFF} alt="" srcset="" />
               <p className="temp">32°</p>
               <div className="minmaxContainer">
                 <div className="min">

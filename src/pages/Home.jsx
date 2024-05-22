@@ -18,16 +18,15 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-  
       {/* <WhatWeDo /> */}
       {/* <History /> */}
       <Reviews />
       <Stylish />
-      <Steps />
+      {/* <Steps /> */}
       <LatestWork />
       <Mobile />
       <MeetOurTeam />
-      {/* <Timeline/> */}
+      {/* <Timeline/>    */}
       <Testimonials />
       <Faqs />
       <NewsLetter />

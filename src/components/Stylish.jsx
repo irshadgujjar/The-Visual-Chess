@@ -1,14 +1,14 @@
 import React from "react";
-import "../styles/Stylish.css";
+import "../styles/LatestWork.css";
 import Software from "../assets/Software.gif";
 import UI from "../assets/UI.gif";
 import Mobile from "../assets/Mobile.gif";
 import STAFF from "../assets/STAFF .gif";
 
-export default function Stylish() {
+export default function LatestWork() {
   return (
-    <>
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 mt-12">
+    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+      <div className="max-w-xl  md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
             Services
@@ -47,125 +47,187 @@ export default function Stylish() {
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
-      <section className="services mt-10 flex justify-center flex-wrap">
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4 ">
-          <div className="profile-pic">
-            <img src={UI}></img>
-          </div>
+      <div className="container mx-auto flex display-center ">
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+            <img src={Software} alt="" srcset="" />
 
-          <div className="bottom">
-            <div className="content">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
           </div>
         </div>
-        {/* End of service block */}
 
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
-          <div className="profile-pic">
-            <img src={Software}></img>
-          </div>
-          <div className="bottom">
-            <div className="content ">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls{" "}
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+            <img src={Software} alt="" srcset="" />
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
           </div>
         </div>
-        {/* End of service block */}
-
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
-          <div className="profile-pic">
-            <img src={STAFF}></img>
-          </div>
-
-          <div className="bottom">
-            <div className="content ">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls{" "}
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
-          </div>
-        </div>
-        {/* End of service block */}
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
-          <div className="profile-pic">
-            <img src={Mobile}></img>
-          </div>
-
-          <div className="bottom">
-            <div className="content ">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls{" "}
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+            <img src={Mobile} alt="" srcset="" />
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
           </div>
         </div>
-        {/* End of service block */}
 
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
-          <div className="profile-pic">
-            <img src={UI}></img>
-          </div>
-
-          <div className="bottom">
-            <div className="content ">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls{" "}
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
-          </div>
-        </div>
-        {/* End of service block */}
-
-        {/* Repeat this block for each service */}
-        <div className="services-card mr-2 mb-4 w-full md:w-1/2 lg:w-1/4">
-          <div className="profile-pic">
-            <img src={UI}></img>
-          </div>
-
-          <div className="bottom">
-            <div className="content ">
-              <span className="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicinFcls
-                consectetur adipisicinFcls{" "}
-              </span>
-            </div>
-            <div className="bottom-bottom">
-              <button className="button">Web Development</button>
-            </div>
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+            <img src={UI} alt="" srcset="" />
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
           </div>
         </div>
-        {/* End of service block */}
-      </section>
-    </>
+      </div>
+
+      {/* 2 nd row  */}
+
+      {/* <div className="container mx-auto flex display-center mt-20">
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+           <img src={Software} alt="" srcset="" />
+
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+             <img src={Software} alt="" srcset="" />
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+             <img src={Mobile} alt="" srcset="" />
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="latest-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>latest-card Title</strong>
+             <img src={UI} alt="" srcset="" />
+            <button>
+              Action
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> */}
+    </section>
   );
 }

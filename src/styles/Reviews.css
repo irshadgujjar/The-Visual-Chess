@@ -12,7 +12,8 @@
   border: 1px solid transparent;
   border-radius: 7px;
   transition: all 0.4s ease-in-out;
-  background: #160a334a;
+  /* background: #160a334a; */
+  background: linear-gradient(0deg, transparent, #160a33);
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   margin: 0.5rem;
@@ -21,7 +22,7 @@
 }
 
 .about-item:hover {
-  border: 1px solid #bebae0; 
+  border: 1px solid #bebae0;
 }
 
 .large-text {
