@@ -5,33 +5,11 @@ import { Star } from "lucide-react";
 export default function NewsLetter() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="mx-auto mt-8 sm:px-6 lg:px-8">
-      {/* <div className="mx-auto max-w-xl text-center">
-        <h2
-          className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
-          style={{
-            color: "#BEBAE0",
-            background: "#160A33",
-         
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-          }}
-        >
-          Don't be Shy say Hi !!
-        </h2>
-
-        <p className="mt-4 text-3xl font-bold text-white leading-relaxed text-gray-600">
-          Stay informed with the latest industry trends, insights, and tips{" "}
-          <span style={{ color: "#BEBAE0", fontSize: "1.1em" }}>
-            {" "}
-            &#x25AA;{" "}
-          </span>{" "}
-        </p>
-      </div> */}
-
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 lg:pb-[90px] ">
+      <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
-            NewsLetter
+            Solutions
           </p>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
@@ -135,6 +113,6 @@ export default function NewsLetter() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

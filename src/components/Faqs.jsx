@@ -8,67 +8,47 @@ const Accordion = () => {
   };
 
   return (
-    <section className="relative z-20 overflow-hidden pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 lg:pb-[90px] ">
       <div className="container mx-auto">
-        {/* <div className="mx-auto max-w-xl text-center">
-          <h2
-            className="mt-6 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl rounded-lg p-4"
-            style={{
-              color: "#bebae0",
-              background: "#160A33",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
-            }}
-          >
-            FAQs
+        <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <div>
+            <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
+              FAQs
+            </p>
+          </div>
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
+            <span className="relative inline-block ">
+              <svg
+                viewBox="0 0 52 24"
+                fill="#bebae0"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-[#bebae0] lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              >
+                <defs>
+                  <pattern
+                    id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                  >
+                    <circle cx="1" cy="1" r=".7" />
+                  </pattern>
+                </defs>
+                <rect
+                  fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
+                  width="52"
+                  height="24"
+                />
+              </svg>
+              <span className="relative text-[#bebae0]">The</span>
+            </span>{" "}
+            quick, brown fox jumps over a lazy dog
           </h2>
-          
-          <p className="mt-4 text-3xl font-bold mb-10 text-white leading-relaxed text-white">
-            Any question? Look{" "}
-            <span style={{ color: "#BEBAE0", fontSize: "1.1em" }}>Here </span>{" "}
-            &#x25AA;
-          </p>
-        </div> */}
-
-<div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-          <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
-            faqs
+          <p className="text-base text-[#bebae0] md:text-lg">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque rem aperiam, eaque ipsa quae.
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
-          <span className="relative inline-block ">
-            <svg
-              viewBox="0 0 52 24"
-              fill="#bebae0"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-[#bebae0] lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-            >
-              <defs>
-                <pattern
-                  id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
-                  x="0"
-                  y="0"
-                  width=".135"
-                  height=".30"
-                >
-                  <circle cx="1" cy="1" r=".7" />
-                </pattern>
-              </defs>
-              <rect
-                fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
-                width="52"
-                height="24"
-              />
-            </svg>
-            <span className="relative text-[#bebae0]">The</span>
-          </span>{" "}
-          quick, brown fox jumps over a lazy dog
-        </h2>
-        <p className="text-base text-[#bebae0] md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
-        </p>
-      </div>
-
 
         <div className="-mx-4 flex flex-wrap ">
           <div className="w-full px-4 lg:w-1/2 " style={{ color: "#BEBAE0" }}>
