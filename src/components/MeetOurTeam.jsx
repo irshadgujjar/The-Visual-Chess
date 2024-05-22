@@ -32,7 +32,6 @@ export default function CardSlider() {
   }, []);
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: slidesToShow,
@@ -85,7 +84,8 @@ export default function CardSlider() {
   }
 
   return (
-    <div className="slider-container overflow-hidden">
+    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 lg:pb-[90px] ">
+    <div className="slider-container">
       {/* <div className="mx-auto max-w-xl text-center">
         <h2
           className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl rounded-lg p-4"
@@ -230,5 +230,6 @@ export default function CardSlider() {
         </div>
       </Slider>
     </div>
+    </section>
   );
 }

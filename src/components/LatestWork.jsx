@@ -2,7 +2,7 @@ import React from "react";
 import { FaBriefcase } from "react-icons/fa";
 export default function LatestWork() {
   return (
-    <section className="flex items-center justify-center flex display-center">
+    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 lg:pb-[90px] ">
       <div className=" text-white py-8 ">
         <div className="max-w-xl  md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
