@@ -42,13 +42,10 @@ const Pricing = () => {
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
-      
+
       <div className="container mx-auto">
-
-
-        
         <div className="-mx-4 flex flex-wrap justify-center">
-          <div className="-mx-4 flex flex-wrap text-[#bebae0]">
+          <div className="-mx-4 flex flex-wrap text-[white]">
             <PricingCard
               type="Personal"
               price="$59"
@@ -113,11 +110,17 @@ const PricingCard = ({
   return (
     <>
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div className="relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-[#160a33] px-8 py-10 shadow-pricing dark:border-dark-3 dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]">
+        <div
+          className="relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke  px-8 py-10 shadow-pricing dark:border-dark-3 dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px] "
+          style={{
+            background: "rgba(65, 65, 65, 0.147)",
+            border: "1px solid rgba(255, 255, 255, 0.089)",
+          }}
+        >
           <span className="mb-3 block text-lg font-semibold text-primary">
             {type}
           </span>
-          <h2 className="mb-5 text-[42px] font-bold text-dark dark:text-white">
+          <h2 className="mb-5 text-[42px] font-bold text-[#bebae0]">
             {price}
             <span className="text-base font-medium text-body-color dark:text-dark-6">
               / {subscription}
@@ -131,7 +134,7 @@ const PricingCard = ({
             href="/#"
             className={` ${
               active
-                ? "block w-full rounded-md border border-primary bg-primary p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
+                ? "block w-full rounded-md border border-[#bebae0] bg-[#160a33] p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
                 : "block w-full rounded-md border border-stroke bg-transparent p-3 text-center text-base font-medium text-primary transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3"
             } `}
           >

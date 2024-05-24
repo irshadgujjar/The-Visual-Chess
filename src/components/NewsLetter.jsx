@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
-import { Star } from "lucide-react";
 
-export default function NewsLetter() {
+export default function Letter() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <section className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-12 lg:pb-[90px] ">
+    <div className="relative z-10 overflow-hidden justify-center mr-12 ml-12 pb-8 lg:pb-12">
       <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 bg-[#bebae0] py-px mb-4 text-xs font-semibold tracking-wider text-[#160a33] uppercase rounded-full bg-teal-accent-400">
-            Solutions
+            Newsletter
           </p>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#bebae0] sm:text-4xl md:mx-auto">
@@ -46,43 +45,42 @@ export default function NewsLetter() {
         </p>
       </div>
 
-      <div
-        className="relative isolate overflow-hidden shadow-2xl sm:rounded-3xl sm:px-16 lg:flex lg:gap-x-20 lg:px-24 border border-gray-600 w-full"
-        style={{ background: "#0a0417" }}
-      >
-        <svg
-          viewBox="0 0 1024 1024"
-          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-          aria-hidden="true"
+      <div className="px-4 lg:flex lg:flex-row lg:items-center mt-4">
+        <div
+          className="relative isolate overflow-hidden shadow-2xl sm:rounded-3xl sm:px-8 lg:flex lg:gap-x-10 lg:px-16 border border-gray-600 w-full"
+          style={{ background: "#0a0417" }}
         >
-          <circle
-            cx={512}
-            cy={512}
-            r={512}
-            fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-            fillOpacity="0.7"
-          />
-          <defs>
-            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-              <stop stopColor="#7775D6" />
-              <stop offset={1} stopColor="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
-
-        <div className="relative rounded-lg shadow-lg overflow-hidden sm:flex sm:items-center">
-          <div className="p-6 sm:w-1/2">
-            <h2
-              className="text-3xl font-bold text-gray-800 mb-4"
-              style={{ color: "#BEBAE0" }}
-            >
-              Stay Updated with Our Weekly Newsletter
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            aria-hidden="true"
+          >
+            <circle
+              cx={512}
+              cy={512}
+              r={512}
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-[#bebae0] sm:text-4xl">
+              Boost your productivity.
+              <br />
+              Start using our app today.
             </h2>
-            <p className="text-white mb-4">
-              Join thousands of professionals receiving exclusive content, tips,
-              and industry insights.
+            <p className="mt-6 text-lg leading-8 text-white">
+              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+              Malesuada adipiscing sagittis vel nulla.
             </p>
-            <form className="flex flex-col sm:flex-row sm:space-x-4">
+
+            <form className="flex flex-col sm:flex-row sm:space-x-4 mt-4">
               <input
                 className="flex-grow h-12 px-4 rounded-md border border-gray-300 focus:outline-none focus:border-gray-500"
                 type="email"
@@ -102,17 +100,11 @@ export default function NewsLetter() {
               </button>
             </form>
           </div>
-
-          <div className="w-full lg:w-1/2 ml-3 flex justify-center items-center ml-60">
-            <img
-              src={Logo}
-              alt="Logo"
-              className="max-w-full h-auto"
-              style={{ height: "350px" }}
-            />
+          <div className="max-w-md flex justify-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left ">
+            <img className="relative w-[22rem] " src={Logo} />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

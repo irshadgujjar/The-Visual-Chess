@@ -19,7 +19,7 @@
   padding: 20px 10px;
   border-radius: 10px;
   backdrop-filter:  blur(30px);
-  background-color: rgba(65, 65, 65, 0.308);
+  background-color: rgba(65, 65, 65, 0.097);
   border: 1px solid rgba(255, 255, 255, 0.089);
   cursor: pointer;
 }

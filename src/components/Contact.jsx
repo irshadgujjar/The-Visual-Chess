@@ -3,17 +3,18 @@ import React from "react";
 const ContactUs = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden ml-8  py-20 dark:bg-dark lg:py-[120px]">
+      <section className="relative z-10 overflow-hidden ml-8  py-20 dark:bg-dark lg:py-[120px] flex-display-center">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-               
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]"
-                style={{color:"#BEBAE0"}}>
+                <h2
+                  className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+                  style={{ color: "#BEBAE0" }}
+                >
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color text-white" >
+                <p className="mb-9 text-base leading-relaxed text-body-color text-white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eius tempor incididunt ut labore e dolore magna aliqua. Ut
                   enim adiqua minim veniam quis nostrud exercitation ullamco
@@ -34,7 +35,10 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark " style={{color:"#BEBAE0"}}>
+                    <h4
+                      className="mb-1 text-xl font-bold text-dark "
+                      style={{ color: "#BEBAE0" }}
+                    >
                       Our Location
                     </h4>
                     <p className="text-base text-body-color text-white">
@@ -43,7 +47,7 @@ const ContactUs = () => {
                   </div>
                 </div>
 
-                <div className="mb-8 flex w-full max-w-[370px]">
+                <div className="mb-8 flex w-full max-w-[370px] ">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
@@ -74,7 +78,10 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark " style={{color:"#BEBAE0"}}>
+                    <h4
+                      className="mb-1 text-xl font-bold text-dark "
+                      style={{ color: "#BEBAE0" }}
+                    >
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-white">
@@ -99,18 +106,24 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark " style={{color:"#BEBAE0"}}>
+                    <h4
+                      className="mb-1 text-xl font-bold "
+                      style={{ color: "#BEBAE0" }}
+                    >
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-white">
+                    <p className="text-base text-body-color text-white">
                       info@yourdomain.com
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg  p-8 shadow-lg dark:bg-dark-2 sm:p-12" style={{background:"#160a33"}}>
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 mr-20">
+              <div
+                className="relative rounded-lg  p-8 shadow-lg dark:bg-dark-2 sm:p-12"
+                style={{ background: "rgba(65, 65, 65, 0.147)" }}
+              >
                 <form>
                   <ContactInputBox
                     type="text"
@@ -136,7 +149,7 @@ const ContactUs = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded border border-primary bg-[#bebae0] p-3 text-[#160a33] transition hover:bg-opacity-90"
+                      className="w-full rounded border border-[#bebae0] bg-[#160a33] p-3 text-white transition hover:bg-opacity-90"
                     >
                       Send Message
                     </button>
@@ -155,7 +168,7 @@ const ContactUs = () => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                        fill="#BEBAE0"
+                        fill="#160a33"
                       />
                     </svg>
                   </span>
