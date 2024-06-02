@@ -8,7 +8,7 @@ import "../styles/Testimonials.css";
 export default function Testimonials() {
   const settings = {
     infinite: true,
-    speed: 1000,
+    speed: 400,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,

@@ -119,10 +119,10 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 mr-20">
+            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 mr-10">
               <div
                 className="relative rounded-lg  p-8 shadow-lg dark:bg-dark-2 sm:p-12"
-                style={{ background: "rgba(65, 65, 65, 0.147)" }}
+                style={{ background: "#160a334a", border: "1px solid grey" }}
               >
                 <form>
                   <ContactInputBox

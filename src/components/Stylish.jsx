@@ -49,31 +49,26 @@ export default function LatestWork() {
         </p>
       </div>
       <div className="container mx-auto flex flex-wrap justify-center gap-6">
-        {[
-          { title: "Software", img: Software },
-          { title: "UI Design", img: UI },
-          { title: "Staff Augmentation", img: STAFF },
-          { title: "Software", img: Software },
-          { title: "UI Design", img: UI },
-          { title: "Mobile App", img: Mobile },
-         
-        ].map((card, index) => (
-          <div className="latest-card" key={index}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div>
-              <strong>{card.title}</strong>
-              <img src={card.img} alt={card.title} />
-              <button>
-                Action
-                <FaArrowRight className="arrow" />
-              </button>
-            </div>
+      {[
+        { title: "Software", img: Software },
+        { title: "UI Design", img: UI },
+        { title: "Staff Augmentation", img: STAFF },
+        { title: "Software", img: Software },
+        { title: "UI Design", img: UI },
+        { title: "Mobile App", img: Mobile },
+      ].map((card, index) => (
+        <div className="latest-card" key={index}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div>
+            <strong>{card.title}</strong>
+            <img src={card.img} alt={card.title} className="rounded-t-xl" />
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
     </section>
   );
 }
